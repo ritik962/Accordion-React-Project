@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body,
+html,
+#root {
+  min-height: 100dvh;
+  width: 100%;
+  background-image: url(../src/assets/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
