@@ -7,7 +7,7 @@ const Accordion = ({ data, selectedId, handleClick, icon }) => {
             className="flex items-center justify-between cursor-pointer h-16  rounded-tr-lg border-[1px] border-zinc-400 rounded-tl-lg px-4   bg-white"
             onClick={() => handleClick(id)}
           >
-            <div className="text-xl font-serif font-semibold tracking-tight">
+            <div className="text-lg md:text-xl font-serif font-semibold tracking-tight">
               {title}
             </div>
             <img
@@ -20,7 +20,7 @@ const Accordion = ({ data, selectedId, handleClick, icon }) => {
           </div>
           {selectedId === id && (
             <div className="p-4 bg-white rounded-bl-lg rounded-br-lg border-[1px] border-t-0 border-zinc-400 text-left">
-              <p className=" text-lg font-serif">{content}</p>
+              <p className=" text-md md:text-lg font-serif">{content}</p>
               <button className="mt-4 bg-amber-500 text-white p-2 rounded-sm">
                 Learn More
               </button>
